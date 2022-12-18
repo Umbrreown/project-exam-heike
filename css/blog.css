@@ -1,0 +1,10 @@
+.load-more-posts-btn  {
+    display: none;
+    text-align: center;
+    background-color: bisque;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px 0px;
+
+}

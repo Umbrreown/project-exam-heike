@@ -1,0 +1,22 @@
+.form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.form-fields {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px 0px;
+}
+.form-send {
+    background-color: #FFF;
+    font-family: 'Pacifico', cursive;
+    font-size: medium;
+}
+.form-send:hover {
+    cursor: pointer;
+}

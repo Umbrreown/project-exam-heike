@@ -1,0 +1,168 @@
+/*
+### fonts
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto Flex', sans-serif;
+###
+ */
+
+
+ .h1Pacifico {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    text-align: center;
+ }
+
+ ul {
+    list-style-type: none;
+ }
+ li {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 900;
+ }
+ a,
+ a:visited {
+    text-decoration: none;
+    color: black;
+ }
+ a:hover {
+    color: gray;
+ }
+ html, body {
+    margin: 0%;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". head head ."
+    ". hero hero ."
+    ". main main ."
+    "footer footer footer footer"
+    ;
+    justify-items: center;
+
+  }
+  header {
+    width: 100%;
+    height: 10vh;
+    grid-area: head;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header>img {
+    width: 50%;
+  }
+  nav {
+    width: 50%;
+  }
+  nav>ul {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 5px;
+
+  }
+  .hero {
+    grid-area: hero;
+    background-image: url("/images/odinheader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 40vh;
+
+    width: 100%;
+  }
+  .main {
+    grid-area: main;
+    justify-self: center;
+
+  }
+  .card {
+    display: flex;
+    min-width: 50rem;
+    max-width: 70rem;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem 0rem;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+  .card-title {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 900;
+  }
+  .card-date {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+  }
+  .card-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .card-img { /* No longer in use, but just in case I change my mind */
+    max-height: 100%;
+    max-width: 15rem;
+    border: 10px solid white;
+    margin: 10px;
+  }
+  .card-link {
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+  footer {
+    grid-area: footer;
+    flex-shrink: 0;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    font-family: 'Pacifico', cursive;
+    font-size: small;
+  }
+
+@media only screen and (max-width: 1300px) {
+  header {
+    flex-direction: row;
+  }
+  nav {
+    width: 100%;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .card {
+    min-width: 0;
+  }
+
+  .card-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  header {
+    flex-wrap: wrap;
+  }
+  ul {
+    flex-direction: column;
+  }
+
+}
